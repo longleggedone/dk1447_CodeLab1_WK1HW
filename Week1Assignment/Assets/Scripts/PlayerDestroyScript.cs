@@ -13,4 +13,12 @@ public class PlayerDestroyScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public void OnCollisionEnter(Collision other){
+		Destroy(gameObject);
+	}
+
+	public void OnCollisionExit(Collision other){
+		Destroy(gameObject);
+	}
 }
